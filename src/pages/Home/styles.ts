@@ -1,30 +1,32 @@
 import styled from "@emotion/styled";
 
 export const HomeContainer = styled.div`
-  #center {
-    border: 10px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  div > article:nth-of-type(1) > div {
+    background-color: olive;
+    height: 300px;
   }
-  header {
-    border: 3px solid blue;
-    display: flex;
-    justify-content: center;
+  div > section {
+    width: 60vw;
+    border: 2px solid crimson;
+    margin: auto;
   }
-  header > div {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 70vw;
-  }
-  .header-nav ul {
-    padding: 10px;
-    background-color: beige;
+  div > section > article:nth-of-type(1) > span {
     display: flex;
     justify-content: space-evenly;
   }
-  .header-nav li {
+  div > section > article:nth-of-type(2) {
+    border: 2px solid purple;
+  }
+  div > section > article:nth-of-type(2) > ul {
+    margin: auto;
+    background-color: bisque;
+  }
+  div > section > article:nth-of-type(2) > ul > div {
+    display: flex;
+  }
+  div > section > article:nth-of-type(2) > ul > div > li {
+    border: 3px solid green;
+    width: 300px;
     list-style: none;
   }
 `;

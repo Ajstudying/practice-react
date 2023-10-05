@@ -1,21 +1,23 @@
 import { Link, Outlet } from "react-router-dom";
-import { HomeContainer } from "./pages/Home/styles";
 import { Suspense } from "react";
+import { LayoutContainer } from "./styles";
 
 const Layout = () => {
   return (
-    <HomeContainer>
+    <LayoutContainer>
       <div id="center">
         <header>
           <div>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div id="searchForm">
               <h1>
                 <Link to="/">Bruch Story</Link>
               </h1>
-              <label htmlFor="">
-                <input type="text" />
-                <button>검색</button>
-              </label>
+              <form>
+                <label>
+                  <input type="text" />
+                  <span className="material-symbols-outlined">search</span>
+                </label>
+              </form>
             </div>
             <nav className="header-nav">
               <ul>
@@ -46,7 +48,7 @@ const Layout = () => {
           </Suspense>
         </main>
       </div>
-    </HomeContainer>
+    </LayoutContainer>
   );
 };
 
