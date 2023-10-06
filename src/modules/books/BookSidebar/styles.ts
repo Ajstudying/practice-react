@@ -8,7 +8,7 @@ export const SidebarContainer = styled.div`
   }
   main {
     display: flex;
-    width: 80%;
+    width: 65%;
     gap: 20px;
   }
   main > aside {
