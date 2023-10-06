@@ -30,6 +30,6 @@ export const SidebarContainer = styled.div`
     list-style: none;
   }
   main > section {
-    width: 100%;
+    width: 90%;
   }
 `;
